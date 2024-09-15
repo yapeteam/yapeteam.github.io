@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YolBi Official</title>
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="./src/css/waifu.min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="./src/css/font-awesome.min.css" type="text/css" media="all"/>
+    <script type="text/javascript" src="./src/js/jquery.min.js"></script>
+</head>
 
-      <title>YolBi Official</title>
-      <link rel ="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+<body>
+<div id="app"></div>
+<script type="module" src="./src/main.js"></script>
 
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="220" height="250" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fa fa-home"></span>
+        <span class="fa fa-comments"></span>
+        <span class="fa fa-drivers-license-o"></span>
+        <span class="fa fa-street-view"></span>
+        <span class="fa fa-camera"></span>
+        <span class="fa fa-info-circle"></span>
+        <span class="fa fa-close"></span>
+    </div>
+</div>
+<script type="text/javascript" src="./src/js/live2d.js"></script>
+<script type="text/javascript" src="./src/js/waifu-tips.js"></script>
+</body>
+
 </html>
