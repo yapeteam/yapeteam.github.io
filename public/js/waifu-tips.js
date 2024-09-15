@@ -36,11 +36,11 @@ var model_p = 22,
     m22_id = m33_id = 0;
 $('.waifu-tool .fa-drivers-license-o').click(function () {
     if (model_p === 22) {
-        loadlive2d('live2d', './src/model/model_22_' + (m22_id % model_l) + '.json');
+        loadlive2d('live2d', '/model/model_22_' + (m22_id % model_l) + '.json');
         model_p = 33;
         showMessage('33援交有点累了，现在该我上场了', 4000)
     } else {
-        loadlive2d('live2d', './src/model/model_33_' + (m33_id % model_l) + '.json');
+        loadlive2d('live2d', '/model/model_33_' + (m33_id % model_l) + '.json');
         model_p = 22;
         showMessage('我又回来了！', 4000)
     }
@@ -48,14 +48,14 @@ $('.waifu-tool .fa-drivers-license-o').click(function () {
 $('.waifu-tool .fa-street-view').click(function () {
     if (model_p === 22) {
         m33_id += 1;
-        loadlive2d('live2d', './src/model/model_33_' + (m33_id % model_l) + '.json');
+        loadlive2d('live2d', '/model/model_33_' + (m33_id % model_l) + '.json');
     } else {
         m22_id += 1;
-        loadlive2d('live2d', './src/model/model_22_' + (m22_id % model_l) + '.json');
+        loadlive2d('live2d', '/model/model_22_' + (m22_id % model_l) + '.json');
     }
     showMessage('我的新衣服好看嘛', 4000);
 });
-loadlive2d('live2d', './src/model/model_33_' + Math.floor(Math.random() * model_l) + '.json');
+loadlive2d('live2d', '/model/model_33_' + Math.floor(Math.random() * model_l) + '.json');
 $(document).on('copy', function () {
     showMessage('你都复制了些什么呀，转载要记得加上出处哦', 8000)
 });
